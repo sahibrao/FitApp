@@ -3,12 +3,12 @@ import { View, Text } from "react-native";
 
 import styles from "./popularjobcard.style";
 
-const PopularJobCard = () => {
+const PopularWorkoutCard = () => {
   return (
     <View>
-      <Text>PopularJobCard</Text>
+      <Text>PopularWorkoutCard</Text>
     </View>
   );
 };
 
-export default PopularJobCard;
+export default PopularWorkoutCard;

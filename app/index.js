@@ -6,6 +6,7 @@ import { COLORS, icons, images, SIZES } from "../constants";
 import {
   Nearbyjobs,
   Popularjobs,
+  Popularworkouts,
   ScreenHeaderBtn,
   SreenHeaderBtn,
   Welcome,
@@ -34,6 +35,7 @@ const Home = () => {
         <View style={{ flex: 1, padding: SIZES.medium }}>
           <Welcome />
           <Popularjobs />
+          <Popularworkouts />
           <Nearbyjobs />
         </View>
       </ScrollView>

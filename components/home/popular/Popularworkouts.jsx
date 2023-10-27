@@ -9,12 +9,14 @@ import {
 import { useRouter } from "expo-router";
 
 // 55 minutes for API
+// 1:04 for implementing API
 
-import styles from "./popularjobs.style";
+import styles from "./popularworkouts.style";
 import { COLORS, SIZES } from "../../../constants";
-import PopularJobCard from "../../common/cards/popular/PopularJobCard";
+import PopularWorkoutCard from "../../common/cards/popular/PopularWorkoutCard";
+import useFetch from "../../../hook/useFetch";
 
-const Popularjobs = () => {
+const Popularworkouts = () => {
   const router = useRouter();
   const isLoading = false;
   const error = false;
@@ -36,7 +38,7 @@ const Popularjobs = () => {
         ) : (
           <FlatList
             data={[1, 2, 3, 4, 5, 6]}
-            renderItem={({ item }) => <PopularJobCard item={item} />}
+            renderItem={({ item }) => <PopularWorkoutCard item={item} />}
             keyExtractor={(item) => item?.job_id}
             contentContainerStyle={{ columnGap: SIZES.medium }}
             horizontal
@@ -47,4 +49,4 @@ const Popularjobs = () => {
   );
 };
 
-export default Popularjobs;
+export default Popularworkouts;
